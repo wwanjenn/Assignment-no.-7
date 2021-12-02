@@ -13,7 +13,10 @@
 print('Word, Vowel and Consonant Counter')
 sentence = input('Sentence: ')
 # 2 Loop
-
+numVowels = 0
+numNumbers = 0
+numConsonants = 0
+numWords = 1
 for l in range(len(sentence)):
     
     if sentence[l] == 'a' or sentence[l] == 'e'or sentence[l] == 'i' or sentence[l] == 'o' or sentence[l] == 'u':
