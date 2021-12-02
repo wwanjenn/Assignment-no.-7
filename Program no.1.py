@@ -10,7 +10,9 @@
 
 # STEPS
 # 1 Input
-
+print('Word, Vowel and Consonant Counter')
+sentence = input('Sentence: ')
 # 2 Loop
+
 # 3 Calculate
 # 4 Print
