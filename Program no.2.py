@@ -20,20 +20,22 @@ print('d. Have at least one special character')
 # 2 INPUT
 password = input('Password: ')
 # 3 LOOP
+passwordNum = 0
+passwordSpe = 0
 for p in range(len(password)):
 # 4 15 LETTERS
     if len(password) >= 15:
-        feedbackCharactersVa = 'Password has 15 or more characters'
+        feedbackCharacters = 'Password has 15 or more characters'
         output = 'Valid'
     else:
-        feedbackCharactersIn = 'Password needs at least 15 or more characters'
+        feedbackCharacters = 'Password needs at least 15 or more characters'
         output = 'Invalid'
 # 5 1 CAPITAL LETTER
     if password.islower() == True:
-        feedbackUpperCaseVa = 'Password has at least one capital letter'
+        feedbackUpperCase = 'Password has at least one capital letter'
         output = 'Valid'
     else:
-        feedbackUpperCaseIn = 'Password needs at least one capital letter'
+        feedbackUpperCase = 'Password needs at least one capital letter'
         output = 'Invalid'
 # 6 1 NUMBER
     if password[p] == '1' or password[p] == '2' or password[p] == '3' or password[p] == '4' or password[p] == '5' or password[p] == '6' or password[p] == '7' or password[p] == '8' or password[p] == '9' or password[p] == '0':
@@ -55,5 +57,7 @@ else:
     feedbackSpe = 'Passwrod needs at least one special character'
     output = 'Invalid'
 # 9 OUTPUT
+print(f'Input: {password}')
+print(f'Validity: {output}')
 
       
