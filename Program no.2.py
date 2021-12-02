@@ -13,7 +13,7 @@
 # 1 PRINT TITLE AND GUIDLINES
 print('Password Validator!')
 print('Criteria:')
-print('a. Greater than 15 letters')
+print('a. Greater than 15 characters')
 print('b. Have at least one capital letter')
 print('c. Have at least one number')
 print('d. Have at least one special character')
@@ -22,7 +22,8 @@ password = input('Password: ')
 # 3 LOOP
 for p in range(len(password)):
 # 4 15 LETTERS
-
+    if len(password) >= 15:
+        feedbackPassword = 'Password has 15 or more characters'
 # 5 1 CAPITAL LETTER
 
 # 6 1 NUMBER
