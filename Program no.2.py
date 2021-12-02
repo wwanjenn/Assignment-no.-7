@@ -23,12 +23,20 @@ password = input('Password: ')
 for p in range(len(password)):
 # 4 15 LETTERS
     if len(password) >= 15:
-        feedbackCharacters = 'Password has 15 or more characters'
+        feedbackCharactersVa = 'Password has 15 or more characters'
+    else:
+        feedbackCharactersIn = 'Password needs at least 15 or more characters'
 # 5 1 CAPITAL LETTER
     if password.islower() == True:
-        feedbackUpperCase = 'Password needs at least one capital letter'
-# 6 1 NUMBER
+        feedbackUpperCaseVa = 'Password has at least one capital letter'
+    else:
+        feedbackUpperCaseIn = 'Password needs at least one capital letter'
     
+# 6 1 NUMBER
+    if password[p] == '1' or password[p] == '2' or password[p] == '3' or password[p] == '4' or password[p] == '5' or password[p] == '6' or password[p] == '7' or password[p] == '8' or password[p] == '9' or password[p] == '0':
+        feedbackNumberVa = 'Password has at least one Number'
+    else:
+        feedbackNumberIn = 'Password needs at least one Number'
 # 7 1 SPECIAL CHAR
 
 # 8 CALCULATE
