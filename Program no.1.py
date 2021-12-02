@@ -21,6 +21,8 @@ for l in range(len(sentence)):
     
     if sentence[l] == 'a' or sentence[l] == 'e'or sentence[l] == 'i' or sentence[l] == 'o' or sentence[l] == 'u':
         numVowels = numVowels + 1
-    
+    elif (sentence[l].isspace()) == True:
+        numWords = numWords + 1
+
 # 3 Calculate
 # 4 Print
