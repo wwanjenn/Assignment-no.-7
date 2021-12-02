@@ -34,12 +34,12 @@ for p in range(len(password)):
     
 # 6 1 NUMBER
     if password[p] == '1' or password[p] == '2' or password[p] == '3' or password[p] == '4' or password[p] == '5' or password[p] == '6' or password[p] == '7' or password[p] == '8' or password[p] == '9' or password[p] == '0':
-        feedbackNumberVa = 'Password has at least one Number'
-    else:
-        feedbackNumberIn = 'Password needs at least one Number'
+        passwordNum = passwordNum + 1
 # 7 1 SPECIAL CHAR
-
+    elif password[p] in range('`~!@#$%^&*()-_=+[{]}:;,<.>/?'):
+        passwordSpe = passwordSpe + 1 
 # 8 CALCULATE
 
 # 9 OUTPUT
 
+      
