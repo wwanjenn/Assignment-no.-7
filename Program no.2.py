@@ -31,7 +31,7 @@ for p in range(len(password)):
         feedbackCharacters = 'Password needs at least 15 or more characters'
         output = 'Invalid'
 # 5 1 CAPITAL LETTER
-    if password.islower() == True:
+    if password.islower() == False:
         feedbackUpperCase = 'Password has at least one capital letter'
         output = 'Valid'
     else:
@@ -41,7 +41,7 @@ for p in range(len(password)):
     if password[p] == '1' or password[p] == '2' or password[p] == '3' or password[p] == '4' or password[p] == '5' or password[p] == '6' or password[p] == '7' or password[p] == '8' or password[p] == '9' or password[p] == '0':
         passwordNum = passwordNum + 1
 # 7 1 SPECIAL CHAR
-    elif password[p] in range('`~!@#$%^&*()-_=+[{]}:;,<.>/?'):
+    elif password[p] == '`' or password[p] == '~' or password[p] == '!' or password[p] == '@' or password[p] == '#' or password[p] == '$' or password[p] == '%' or password[p] == '^' or password[p] == '&' or password[p] == '*' or password[p] == '(' or password[p] == ')' or password[p] == '-' or password[p] == '_' or password[p] == '=' or password[p] == '+' or password[p] == '[' or password[p] == '{' or password[p] == ']' or password[p] == '}' or password[p] == ':' or password[p] == ';' or password[p] == '|' or password[p] == ',' or password[p] == '<' or password[p] == '.' or password[p] == '>' or password[p] == '/' or password[p] == '?':
         passwordSpe = passwordSpe + 1 
 # 8 CALCULATE
 if passwordNum >= 1:
@@ -59,5 +59,8 @@ else:
 # 9 OUTPUT
 print(f'Input: {password}')
 print(f'Validity: {output}')
-
+print(feedbackCharacters)
+print(feedbackUpperCase)
+print(feedbackNum)
+print(feedbackSpe)
       
