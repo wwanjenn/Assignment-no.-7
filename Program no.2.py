@@ -10,11 +10,15 @@
 # ouput: Valid
 
 # STEPS
-
 # 1 PRINT TITLE AND GUIDLINES
-
+print('Password Validator!')
+print('Criteria:')
+print('a. Greater than 15 letters')
+print('b. Have at least one capital letter')
+print('c. Have at least one number')
+print('d. Have at least one special character')
 # 2 INPUT
-
+password = input('Password: ')
 # 3 LOOP
 
 # 4 15 LETTERS
