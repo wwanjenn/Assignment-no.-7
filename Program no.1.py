@@ -23,6 +23,8 @@ for l in range(len(sentence)):
         numVowels = numVowels + 1
     elif (sentence[l].isspace()) == True:
         numWords = numWords + 1
-
+        if sentence[-1].isspace() == True:
+            numWords = numWords - 1
+print(numWords,numVowels,numConsonants)
 # 3 Calculate
 # 4 Print
