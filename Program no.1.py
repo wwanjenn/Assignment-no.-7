@@ -21,10 +21,14 @@ for l in range(len(sentence)):
     
     if sentence[l] == 'a' or sentence[l] == 'e'or sentence[l] == 'i' or sentence[l] == 'o' or sentence[l] == 'u':
         numVowels = numVowels + 1
+    elif sentence[l] == '1' or sentence[l] == '2' or sentence[l] == '3' or sentence[l] == '4' or sentence[l] == '5' or sentence[l] == '6' or sentence[l] == '7' or sentence[l] == '8' or sentence[l] == '9' or sentence[l] == '0':
+        numNumbers = numNumbers + 1
     elif (sentence[l].isspace()) == True:
         numWords = numWords + 1
-        if sentence[-1].isspace() == True:
-            numWords = numWords - 1
+
+
+if sentence[-1].isspace() == True:
+    numWords = numWords - 1
 print(numWords,numVowels,numConsonants)
 # 3 Calculate
 # 4 Print
