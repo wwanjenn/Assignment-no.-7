@@ -20,7 +20,7 @@ print('d. Have at least one special character')
 # 2 INPUT
 password = input('Password: ')
 # 3 LOOP
-
+for p in range(len(password)):
 # 4 15 LETTERS
 
 # 5 1 CAPITAL LETTER
