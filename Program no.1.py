@@ -17,6 +17,7 @@ numVowels = 0
 numNumbers = 0
 numConsonants = 0
 numWords = 1
+
 for l in range(len(sentence)):
     
     if sentence[l] == 'a' or sentence[l] == 'e'or sentence[l] == 'i' or sentence[l] == 'o' or sentence[l] == 'u':
@@ -28,9 +29,10 @@ for l in range(len(sentence)):
     elif (sentence[l].isspace()) == True:
         numWords = numWords + 1
     
-
 if sentence[-1].isspace() == True:
     numWords = numWords - 1
-print(numWords,numVowels,numConsonants)
-# 3 Calculate
-# 4 Print
+
+print('Vowels: ', numVowels)
+print('Consonants: ', numConsonants)
+print('Words: ', numWords)
+
